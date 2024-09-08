@@ -80,7 +80,8 @@ $ npm i @nestjs/jwt
 $ npm i -D @types/bcrypt
 
 #encriptacion para el hash de la contraseña
-$ npm install bcrypt 
+$ npm install bcrypt
+```
 
 ## comandos adicionales
 ```bash
@@ -89,6 +90,7 @@ $ nest g rest users
 
 #solamente crea un componente bacio
 $ nest g users
+```
 
 ## rutas dentro del projecto
 #ruta informe swagger de los endpoint
