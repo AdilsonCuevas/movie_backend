@@ -58,6 +58,23 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Librerias Utilizadas 
+$ npm install prisma -D // gestion de la base de datos
+$ npx prisma init --datasource-provider sqlite  // crea una base de datos sqlite
+$ npx prisma migrate dev --name init // realiza las migraciones de los modelos a la base de datos
+$ nest g service prisma --al-spec //crea un servicio de prisma para gestion de datos
+$ npm i @nestjs/jwt  // libreria para autenticacion de usuarios
+$ npm i -D @types/bcrypt // tipo de encriptacion
+npm install bcrypt // encriptacion para el hash de la contraseña
+
+## comandos adicionales
+$ nest g rest users  // crea componentes completos para crud en el controlador
+$ nest g users   // solamente crea un componente bacio
+
+## rutas dentro del projecto
+http://localhost:4000/api -> ruta informe swagger de los endpoint
+http://localhost:4000/api/users -> base de datos
+
 ## Resources
 
 Check out a few resources that may come in handy when working with NestJS:
