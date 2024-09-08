@@ -59,21 +59,43 @@ $ npm run test:cov
 ```
 
 ## Librerias Utilizadas 
-$ npm install prisma -D // gestion de la base de datos
-$ npx prisma init --datasource-provider sqlite  // crea una base de datos sqlite
-$ npx prisma migrate dev --name init // realiza las migraciones de los modelos a la base de datos
-$ nest g service prisma --al-spec //crea un servicio de prisma para gestion de datos
-$ npm i @nestjs/jwt  // libreria para autenticacion de usuarios
-$ npm i -D @types/bcrypt // tipo de encriptacion
-npm install bcrypt // encriptacion para el hash de la contraseña
+
+```bash
+# gestion de la base de datos
+$ npm install prisma -D
+
+#crea una base de datos sqlite
+$ npx prisma init --datasource-provider sqlite
+
+#realiza las migraciones de los modelos a la base de datos
+$ npx prisma migrate dev --name init
+
+#crea un servicio de prisma para gestion de datos
+$ nest g service prisma --al-spec
+
+#libreria para autenticacion de usuarios
+$ npm i @nestjs/jwt
+
+#tipo de encriptacion
+$ npm i -D @types/bcrypt
+
+#encriptacion para el hash de la contraseña
+$ npm install bcrypt 
 
 ## comandos adicionales
-$ nest g rest users  // crea componentes completos para crud en el controlador
-$ nest g users   // solamente crea un componente bacio
+```bash
+#crea componentes completos para crud en el controlador
+$ nest g rest users
+
+#solamente crea un componente bacio
+$ nest g users
 
 ## rutas dentro del projecto
-http://localhost:4000/api -> ruta informe swagger de los endpoint
-http://localhost:4000/api/users -> base de datos
+#ruta informe swagger de los endpoint
+http://localhost:4000/api 
+
+#base de datos
+http://localhost:4000/api/users
 
 ## Resources
 
